@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>All Direction - Music with a Mission</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #4b0082, #1e1e60, #000);
+      color: white;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #1e1e60;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      flex-wrap: wrap;
+    }
+    header h1 {
+      font-size: 1.8rem;
+      color: #ffd700;
+      margin: 0;
+    }
+    header p {
+    font-style: italic;
+    margin: 0;
+    color: #fff;
+    min-width: 150px;
+    text-align: right;  
+}
+    section {
+      padding: 5rem 1rem 2rem;
+      text-align: center;
+    }
+    .card {
+      background: #2c2c80;
+      margin: 1rem;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 8px rgba(255, 215, 0, 0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(255, 215, 0, 0.5);
+    }
+    h2 {
+      color: #ffd700;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #ffd700;
+    }
+    .social-icons i {
+      font-size: 2rem;
+      margin: 0 1rem;
+      transition: color 0.3s;
+    }
+    .social-icons i:hover {
+      color: #ffd700;
+    }
+    footer {
+      background: #1e1e60;
+      padding: 1rem;
+      color: #ffd700;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea {
+      padding: 0.8rem;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      font-size: 1rem;
+    }
+    button {
+      background: #ffd700;
+      border: none;
+      padding: 0.8rem;
+      font-weight: bold;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #e5c100;
+    }
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+        section {
+      padding: 2rem;
+      text-align: center;
+    }
+       .team {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .member {
+      background-color: #3f51b5;
+      padding: 1rem;
+      border-radius: 1rem;
+      width: 200px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .member:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #ffeb3b;
+    }
+    .member img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      border: 2px solid #ffeb3b;
+      object-fit: cover;
+      
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://www.dropbox.com/scl/fi/kym3amoian0xwpgcvsugx/Logo.png?rlkey=wt104xc8r9k1suqttbc87kvo3&st=g5d2qc9r&raw=1" alt="All Direction Logo" class="logo" style="height: 80px;">
+    <h1>All Direction 4 Christ</h1>
+    <P>Music with a Mission </p>
+  </header>
+<br>
+<br>
+<br>
+<br>
+  <section>
+    <h2>Our Mission</h2>
+    <div class="grid">
+      <div class="card">
+        <i class="fas fa-music"></i>
+        <h3>Our Sound</h3>
+        <p>Uplifting gospel music blending contemporary and traditional styles to glorify God.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-globe"></i>
+        <h3>Global Mission</h3>
+        <p>Sharing the message of Christ across nations through music, love, and unity.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-cross"></i>
+        <h3>Faith Driven</h3>
+        <p>Every note, every lyric is rooted in Scripture and guided by the Holy Spirit.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Past Events</h2>
+    <div class="grid">
+      <div class="card">Friday NIBS Chapel - NIBS Campus, Kerala (2024) </div>
+      <div class="card">North East Meet - Kerala (Nov 2024)</div>
+      <div class="card">Parra Church  - Thiruvalla, Kerala (Sept 2024)</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Upcoming Event</h2>
+    <div class="card">
+      <h3>International Gospel Tour - Nepal </h3>
+      <p>Join us for a night of praise and worship!</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Released Songs</h2>
+    <a href="https://youtu.be/sLaK_fb8zis?si=p4wmoa5THP_SC7RU" target="_blank" class="card" style="display: block;">
+  <h3>Turn it Up</h3>
+  <p>2024 — Cover Song</p>
+</a>
+
+     <!-- </a>
+      <a href="https://www.youtube.com/watch?v=example2" target="_blank">
+        <div class="card">
+          <h3>Light of the World</h3>
+          <p>2024 Album — Celebrating the life and message of Christ.</p>
+        </div>
+      </a> 
+      <a href="https://www.youtube.com/watch?v=example3" target="_blank">
+        <div class="card">
+          <h3>He Reigns</h3>
+          <p>2023 Single — Powerful worship declaration.</p>
+        </div>
+      </a> -->
+    </div>
+  </section>
+      <section>
+      <h2>Meet the Team</h2>
+      <div class="team">
+        <div class="member">
+          <img src="https://www.dropbox.com/scl/fi/gnldjmovimuymtac4vqgd/IMG_20250523_164307.jpg?rlkey=8w7h3dp06tkq13xqp7mwpz37d&st=yskbirs8&raw=1" alt="Chingriba Y.K.">
+          <h3>Chingriba Y.K.</h3>
+          <p>Lead Vocalist</p>
+          <p><small>Manipur</small></p>
+        </div>
+        <div class="member">
+          <img src="https://www.dropbox.com/scl/fi/2naurl1l8319x1xa1l3az/IMG_20250519_033322.jpg?rlkey=lbvfjj3yze9os5tteypddxnrm&st=t4wfkrr1&raw=1" alt="Pawan">
+          <h3>Pawan</h3>
+          <p>Lead Vocalist</p>
+          <p><small>Delhi</small></p>
+        </div>
+        <div class="member">
+          <img src="https://www.dropbox.com/scl/fi/z3l5zkr5fm4a3xkigub6i/IMG_20250519_190619.jpg?rlkey=l0k2s7ztsn5gpisojrwpm35ov&st=7cuu0qni&raw=1" alt="Blessan M.">
+          <h3>Blessan M.</h3>
+          <p>Lead Vocalist</p>
+          <p><small>Kerala</small></p>
+        </div>
+        <div class="member">
+          <img src="https://www.dropbox.com/scl/fi/cs7ne0zn5yrhjnn8s5y0c/IMG-20250522-WA0002.jpg?rlkey=j4xw2o6etm0ox0qu8ed0s2mep&st=2ji26tjn&raw=1" alt="Michael Bhatti">
+          <h3>Michael Bhatti</h3>
+          <p>Classical Singer</p>
+          <p><small>Punjab</small></p>
+        </div>
+        <div class="member">
+          <img src="https://www.dropbox.com/scl/fi/5krzmb2j4hftf0n6zt3v5/IMG-20250519-WA0016.jpg?rlkey=8l1xg58ac1jl6az8nsr07iagk&st=hsqu9xhp&raw=1" alt="Santosh ">
+          <h3>Santosh </h3>
+          <p>Guitarist</p>
+          <p><small>Nepal</small></p>
+        </div>
+        <div class="member">
+          <img src="https://www.dropbox.com/scl/fi/m538k7dtkm1lz6vvvkhwd/IMG_20250522_135800.jpg?rlkey=5ywh2ti89glyljle0e10nnkmt&st=disob56g&raw=1" alt="Shawn ">
+          <h3>Shawn A.S.</h3>
+          <p>Keyboardist</p>
+          <p><small>Tamilnadu</small></p>
+        </div>
+        <div class="member">
+          <img src="https://www.dropbox.com/scl/fi/m1h22u43iihpqmxy0ylxv/IMG_20250522_135018.jpg?rlkey=vya8vafaskxy8lzujx8u9awpj&st=2s61nnvo&raw=1" alt="Raju Garti">
+          <h3>Raju Garti</h3>
+          <p>Drummer</p>
+          <p><small>Nepal</small></p>
+        </div>
+        <div class="member">
+          <img src="https://www.dropbox.com/scl/fi/rfngz4zaw2a3jz03e8ic3/IMG-20250210-WA0001.jpg?rlkey=pdbuk79aqvqqqezcivi91oxj8&st=cjme4fdr&raw=1" alt="Samson">
+          <h3>Samson</h3>
+          <p>Drummer</p>
+          <p><small>Kerala</small></p>
+        </div>
+        <div class="member">
+          <img src="https://www.dropbox.com/scl/fi/lec85wupw093n647s0vtr/IMG_20241227_192459.jpg?rlkey=dnx3yypj7vfvhkrx63f54zx8l&st=88c7j2t4&raw=1" alt="Dinesh">
+          <h3>Dinesh Y.</h3>
+          <p>Sound Engineer</p>
+          <p><small>Chattisgadh</small></p>
+        </div>
+        <div class="member">
+          <img src="https://www.dropbox.com/scl/fi/rdk6ucbucrt9s15b896iy/1735318366430.jpg?rlkey=cac83wb96ppo1xr0d8v3id2lz&st=8djmh24h&raw=1" alt="Arvind Sagar">
+          <h3>Arvind Sagar</h3>
+          <p>Media Manager</p>
+          <p><small>Bihar</small></p>
+        </div>
+        <div class="member">
+          <img src="https://www.dropbox.com/scl/fi/7xxj0y2anawiya78n7y5b/result-6.png?rlkey=aof4tnu8478i7p8bfuhj3x2pv&st=sunpu8fj&raw=1" alt="Ayush">
+          <h3>Ayush Sonvani</h3>
+          <p>Media Assistant</p>
+          <p><small>Chhattisgarh</small></p>
+        </div>
+      </div>
+    </section>
+
+  <section>
+    <h2>Connect with Us</h2>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=61576724336670" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/all_directions_4_christ?igsh=Yjc5bDgwd3l5M2Vk" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/@AllDirection4christ" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 All Direction. All rights reserved. | Music with a Mission
+  </footer>
+
+</body>
+</html>
